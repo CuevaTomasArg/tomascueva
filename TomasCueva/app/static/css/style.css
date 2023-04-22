@@ -1,0 +1,16 @@
+body {
+  background-color: #131114;
+}
+
+header .navbar.bg-purple {
+  background-color: #8357BB !important;
+}
+header .navbar .conteiner-fluid .navbar-brand {
+  width: auto;
+}
+header .navbar .conteiner-fluid .navbar-brand img {
+  width: 32px;
+  height: 32px;
+}
+
+/*# sourceMappingURL=style.css.map */

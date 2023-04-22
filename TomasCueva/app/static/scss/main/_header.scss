@@ -1,0 +1,19 @@
+
+header{
+    .navbar.bg-purple {
+        background-color: nth($colors,3) !important;
+      }
+    .navbar{
+        .conteiner-fluid{
+            .navbar-brand{
+                width: auto;
+                img{
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+        }
+    }
+}
+
+  
