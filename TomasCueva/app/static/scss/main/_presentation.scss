@@ -1,6 +1,5 @@
 .presentation{
     background-color: $background;
-    padding: 32px 16px 64px 16px;
     text-align: center;
     @include flex(column,space-between,center);
     img{

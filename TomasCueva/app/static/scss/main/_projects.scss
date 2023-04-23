@@ -1,0 +1,18 @@
+.projects{
+    background-color: $background;
+    color: nth($colors, 2 );
+    .cambioSeccion{
+        @include flex(row,start,center);
+        margin: 32px auto 24px auto;
+        hr{
+            width: 35%;
+            margin-left: 16px;
+        }
+        h2{
+            margin: auto 0;
+        }
+    }
+    .cards-projects{
+        @import '../components/card';
+    }
+}

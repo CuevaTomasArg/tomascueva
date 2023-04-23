@@ -17,6 +17,10 @@ body {
   margin: auto 32px auto 0px;
 }
 
+section {
+  padding: 32px 16px 64px 16px;
+}
+
 header .navbar.bg-purple {
   background-color: #8357BB !important;
 }
@@ -37,7 +41,6 @@ header .navbar .conteiner-fluid .navbar-brand img {
 
 .presentation {
   background-color: #131114;
-  padding: 32px 16px 64px 16px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -90,7 +93,6 @@ header .navbar .conteiner-fluid .navbar-brand img {
 }
 
 .aboutme {
-  padding: 32px 16px 64px 16px;
   background-color: #252525;
 }
 .aboutme img {
@@ -170,6 +172,74 @@ header .navbar .conteiner-fluid .navbar-brand img {
   .aboutme {
     padding: 64px 256px;
   }
+}
+
+.projects {
+  background-color: #131114;
+  color: #F6F6F6;
+}
+.projects .cambioSeccion {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  margin: 32px auto 24px auto;
+}
+.projects .cambioSeccion hr {
+  width: 35%;
+  margin-left: 16px;
+}
+.projects .cambioSeccion h2 {
+  margin: auto 0;
+}
+.projects .cards-projects .card-SEA {
+  margin: auto 32px;
+  border-radius: 32px;
+  background-color: #252525;
+  max-width: 324px;
+  height: max-content;
+}
+.projects .cards-projects .card-SEA img {
+  width: 100%;
+  max-height: 256px;
+  object-fit: cover;
+  border-top-right-radius: 32px;
+  border-top-left-radius: 32px;
+}
+.projects .cards-projects .card-SEA .card-SEA-body {
+  margin: 16px;
+}
+.projects .cards-projects .card-SEA .card-SEA-body strong {
+  color: #8357BB;
+  font-size: 1.2rem;
+}
+.projects .cards-projects .card-SEA .card-SEA-body p {
+  margin: 8px 0;
+}
+.projects .cards-projects .card-SEA .card-SEA-body ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding: 0;
+  margin: 16px 0px;
+}
+.projects .cards-projects .card-SEA .card-SEA-body a {
+  height: 8px;
+  width: 32px;
+  border-radius: 8px;
+  background-color: #8357BB;
+  color: #252525;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.projects .cards-projects .card-SEA .card-SEA-body a *:hover {
+  background-color: #252525;
+  color: #8357BB;
+}
+.projects .cards-projects .card-SEA .card-SEA-body a *:active {
+  background-color: #252525;
+  color: #8357BB;
 }
 
 /*# sourceMappingURL=style.css.map */

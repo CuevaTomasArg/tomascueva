@@ -1,0 +1,48 @@
+.card-SEA{
+    margin: auto 32px ;
+    border-radius: 32px;
+    background-color: nth($colors,1 );
+    max-width: 324px;
+    height: max-content;
+    img{
+        width: 100%;
+        max-height: 256px;
+        object-fit: cover;
+        border-top-right-radius: 32px;
+        border-top-left-radius: 32px;
+    }
+    .card-SEA-body{
+        margin: 16px;
+        strong{
+            color: nth($colors,3 );
+            font-size: 1.2rem;
+        }
+        p{
+            margin: 8px 0;
+        }
+        ul{
+            list-style-type: none;
+            @include grid(1fr 1fr,1fr 1fr);
+            padding: 0;
+            margin: 16px 0px;
+        }
+        a{
+            height: 8px;
+            width: 32px;
+            border-radius: 8px;
+            background-color: nth($colors,3 );
+            color: nth($colors,1 );
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+            *:hover{
+                background-color: nth($colors,1 );
+                color: nth($colors,3 );
+            }
+            *:active{
+                background-color: nth($colors,1 );
+                color: nth($colors,3 );
+            }
+        }
+    }
+
+}
