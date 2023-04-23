@@ -1,0 +1,80 @@
+.aboutme{
+    padding: 32px 16px 64px 16px;
+    background-color: nth($colors,1);
+    img{
+        width: 85%;
+        margin: auto 32px;
+    }
+    *:not(h3){
+        color: nth($colors,2);
+    }
+    h3{
+        color: nth($colors,3);
+        margin-top: 21px;
+    }
+    p{
+        margin-bottom: 21px;
+    }
+    ul{
+        @include grid(auto,1fr 1fr);
+        justify-items: start;
+        margin-top: 21px;
+        li{
+            margin:8px ;
+        }
+    }
+    @media only screen and (min-width: 992px){
+        @include grid(repeat(5,1fr),1fr 2fr);
+        grid-template-areas: 
+        "img aboutme"
+        "img tomascueva"
+        "img text"
+        "img skills"
+        "img ul";
+        max-height: 700px;
+        >*:not(img){
+            margin-left: 16px;
+        }
+
+        img{
+            height: 90%;
+            margin: 0px;
+            grid-area: img;
+            object-fit: cover;
+            width: 95%;
+        }
+        .cambioSeccion{
+            margin: 0px;
+            h2{
+                margin-left: 16px;
+            }
+            *:first-child{
+                grid-area: aboutme;
+            }
+            *:nth-child(2){
+                grid-area: tomascueva;
+            }
+        }
+        h3{
+            margin-top: 32px;
+            grid-area: tomascueva;
+            font-size: 1.8rem;
+        }
+        p{
+            margin-bottom: 32px;
+            grid-area: text;
+            font-size: 1.2rem;
+        }
+        ul{
+            margin-top: 32px;
+            grid-area: ul;
+            li{
+                margin:8px ;
+                font-size: 1.3rem;
+            }
+        }
+    }
+    @media only screen and (min-width: 1201px){
+        padding: 64px 256px ;
+    }
+}

@@ -1,0 +1,52 @@
+.presentation{
+    background-color: $background;
+    padding: 32px 16px 64px 16px;
+    text-align: center;
+    @include flex(column,space-between,center);
+    img{
+        border-radius: 50%;
+        width: 75%;
+    }
+    strong,span{
+        color: nth($colors,2);
+    }
+    h1{
+        font-size: 1.6em;
+        margin: 12px auto;
+        color: nth($colors,3)
+    }
+    @media only screen and (min-width: 992px) and (max-width: 1200px){
+        img{
+            width: 40%;
+            margin-top: 64px;
+        }
+        strong,span{
+            color: nth($colors,2);
+            font-size: 1.2em;
+
+        }
+        h1{
+            font-size: 2.1em;
+            font-weight: 600;
+            margin: 24px auto 16px auto;
+            color: nth($colors,3)
+        }
+    }
+    @media only screen and (min-width: 1201px){
+        img{
+            width: 30%;
+            margin-top: 64px;
+        }
+        strong,span{
+            color: nth($colors,2);
+            font-size: 1.2em;
+
+        }
+        h1{
+            font-size: 2.1em;
+            font-weight: 600;
+            margin: 24px auto 16px auto;
+            color: nth($colors,3)
+        }
+    }
+}
