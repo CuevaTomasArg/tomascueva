@@ -1,5 +1,5 @@
 body {
-  background-color: #131114;
+  background-color: #F6F6F6;
 }
 
 .cambioSeccion {
@@ -21,8 +21,8 @@ section {
   padding: 32px 16px 64px 16px;
 }
 
-header .navbar.bg-purple {
-  background-color: #8357BB !important;
+header .navbar.bg-dark-SEA {
+  background-color: #131114 !important;
 }
 header .navbar .conteiner-fluid .navbar-brand {
   width: auto;
@@ -30,6 +30,12 @@ header .navbar .conteiner-fluid .navbar-brand {
 header .navbar .conteiner-fluid .navbar-brand img {
   width: 32px;
   height: 32px;
+}
+header .navbar a {
+  color: #F6F6F6 !important;
+}
+header .navbar a:hover {
+  color: #F6F6F6 !important;
 }
 @media only screen and (min-width: 992px) {
   header li {
@@ -40,7 +46,7 @@ header .navbar .conteiner-fluid .navbar-brand img {
 }
 
 .presentation {
-  background-color: #131114;
+  background-color: #F6F6F6;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -52,7 +58,7 @@ header .navbar .conteiner-fluid .navbar-brand img {
   width: 75%;
 }
 .presentation strong, .presentation span {
-  color: #F6F6F6;
+  color: #131114;
 }
 .presentation h1 {
   font-size: 1.6em;
@@ -65,7 +71,7 @@ header .navbar .conteiner-fluid .navbar-brand img {
     margin-top: 64px;
   }
   .presentation strong, .presentation span {
-    color: #F6F6F6;
+    color: #131114;
     font-size: 1.2em;
   }
   .presentation h1 {
@@ -81,7 +87,7 @@ header .navbar .conteiner-fluid .navbar-brand img {
     margin-top: 64px;
   }
   .presentation strong, .presentation span {
-    color: #F6F6F6;
+    color: #131114;
     font-size: 1.2em;
   }
   .presentation h1 {
@@ -93,14 +99,14 @@ header .navbar .conteiner-fluid .navbar-brand img {
 }
 
 .aboutme {
-  background-color: #252525;
+  background-color: #E7E7E7;
 }
 .aboutme img {
   width: 85%;
   margin: auto 32px;
 }
 .aboutme *:not(h3) {
-  color: #F6F6F6;
+  color: #131114;
 }
 .aboutme h3 {
   color: #8357BB;
@@ -175,8 +181,8 @@ header .navbar .conteiner-fluid .navbar-brand img {
 }
 
 .projects {
-  background-color: #131114;
-  color: #F6F6F6;
+  background-color: #F6F6F6;
+  color: #131114;
 }
 .projects .cambioSeccion {
   display: flex;
@@ -195,7 +201,7 @@ header .navbar .conteiner-fluid .navbar-brand img {
 .projects .cards-projects .card-SEA {
   margin: auto 32px;
   border-radius: 32px;
-  background-color: #252525;
+  background-color: #E7E7E7;
   max-width: 324px;
   height: max-content;
 }
@@ -229,16 +235,16 @@ header .navbar .conteiner-fluid .navbar-brand img {
   width: 32px;
   border-radius: 8px;
   background-color: #8357BB;
-  color: #252525;
+  color: #E7E7E7;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
 .projects .cards-projects .card-SEA .card-SEA-body a *:hover {
-  background-color: #252525;
+  background-color: #E7E7E7;
   color: #8357BB;
 }
 .projects .cards-projects .card-SEA .card-SEA-body a *:active {
-  background-color: #252525;
+  background-color: #E7E7E7;
   color: #8357BB;
 }
 

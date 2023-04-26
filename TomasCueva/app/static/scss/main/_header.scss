@@ -1,7 +1,7 @@
 
 header{
-    .navbar.bg-purple {
-        background-color: nth($colors,3) !important;
+    .navbar.bg-dark-SEA {
+        background-color: nth($colors,2) !important;
       }
     .navbar{
         .conteiner-fluid{
@@ -11,6 +11,12 @@ header{
                     width: 32px;
                     height: 32px;
                 }
+            }
+        }
+        a{
+            color: $background !important;
+            &:hover{
+                color: $background !important;
             }
         }
     }
