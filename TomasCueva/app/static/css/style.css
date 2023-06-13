@@ -1,3 +1,37 @@
+.button_SEA {
+  height: max-content;
+  width: max-content;
+  border-radius: 12px;
+  border: none;
+  padding: 8px 16px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.button_SEA a {
+  text-decoration: none;
+}
+
+.button_SEA.github {
+  background-color: #131114;
+}
+.button_SEA.github a {
+  color: #F6F6F6;
+}
+.button_SEA.github:hover {
+  background-color: #F6F6F6;
+}
+.button_SEA.github:hover a {
+  color: #131114;
+}
+.button_SEA.github:active {
+  background-color: #131114;
+}
+.button_SEA.github:active a {
+  color: #F6F6F6;
+}
+
 body {
   background-color: #F6F6F6;
 }
@@ -200,7 +234,7 @@ header .navbar a:hover {
 }
 .projects .cards-projects .card-SEA {
   margin: auto 32px;
-  border-radius: 32px;
+  border-radius: 12px;
   background-color: #E7E7E7;
   max-width: 324px;
   height: max-content;
@@ -209,8 +243,8 @@ header .navbar a:hover {
   width: 100%;
   max-height: 256px;
   object-fit: cover;
-  border-top-right-radius: 32px;
-  border-top-left-radius: 32px;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
 }
 .projects .cards-projects .card-SEA .card-SEA-body {
   margin: 16px;
@@ -222,30 +256,18 @@ header .navbar a:hover {
 .projects .cards-projects .card-SEA .card-SEA-body p {
   margin: 8px 0;
 }
-.projects .cards-projects .card-SEA .card-SEA-body ul {
-  list-style-type: none;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  padding: 0;
-  margin: 16px 0px;
+.projects .cards-projects .card-SEA .card-SEA-body div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
-.projects .cards-projects .card-SEA .card-SEA-body a {
-  height: 8px;
-  width: 32px;
-  border-radius: 8px;
-  background-color: #8357BB;
-  color: #E7E7E7;
-  text-decoration: none;
-  transition: all 0.3s ease-in-out;
-}
-.projects .cards-projects .card-SEA .card-SEA-body a *:hover {
-  background-color: #E7E7E7;
-  color: #8357BB;
-}
-.projects .cards-projects .card-SEA .card-SEA-body a *:active {
-  background-color: #E7E7E7;
-  color: #8357BB;
+.projects .cards-projects .card-SEA .note {
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 0.8rem;
+  color: #747474;
+  margin: 4px 8px;
 }
 
 /*# sourceMappingURL=style.css.map */

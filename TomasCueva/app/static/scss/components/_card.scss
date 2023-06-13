@@ -1,6 +1,6 @@
 .card-SEA{
     margin: auto 32px ;
-    border-radius: 32px;
+    border-radius: 12px;
     background-color: nth($colors,1 );
     max-width: 324px;
     height: max-content;
@@ -8,8 +8,8 @@
         width: 100%;
         max-height: 256px;
         object-fit: cover;
-        border-top-right-radius: 32px;
-        border-top-left-radius: 32px;
+        border-top-right-radius: 12px;
+        border-top-left-radius: 12px;
     }
     .card-SEA-body{
         margin: 16px;
@@ -20,29 +20,16 @@
         p{
             margin: 8px 0;
         }
-        ul{
-            list-style-type: none;
-            @include grid(1fr 1fr,1fr 1fr);
-            padding: 0;
-            margin: 16px 0px;
+        div{
+            @include flex(row,space-around,center);
         }
-        a{
-            height: 8px;
-            width: 32px;
-            border-radius: 8px;
-            background-color: nth($colors,3 );
-            color: nth($colors,1 );
-            text-decoration: none;
-            transition: all 0.3s ease-in-out;
-            *:hover{
-                background-color: nth($colors,1 );
-                color: nth($colors,3 );
-            }
-            *:active{
-                background-color: nth($colors,1 );
-                color: nth($colors,3 );
-            }
-        }
+    }
+    .note{
+        display: inline-block;
+        padding: 4px 8px;
+        font-size: 0.8rem;
+        color: darken(nth($colors,1), 45%);
+        margin: 4px 8px;
     }
 
 }
